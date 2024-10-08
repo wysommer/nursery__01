@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 #background {
     background-image: url("./assets/trees3.jpg");
@@ -23,12 +22,28 @@ a {
 .header {
     display: flex;
     justify-content: space-between;
-    background-color: #dcdcdc;
+    background: linear-gradient(-33deg, rgba(226, 255, 255, 0.7), rgba(176, 206, 203, 0.7), rgba(221, 221, 221, 0.7), rgba(144, 152, 184, 0.7));
+    background-size: 400% 400%;
     border-bottom: 7px solid #fff;
+    animation: 15s ease infinite moving-gradient;
 }
 
+@keyframes moving-gradient{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+
+
 .page__title {
-    font-family: 'Times New Roman', Times, serif;
+    /* font-family: "Playfair Display", serif; */
     font-weight: 100;
     font-size: 44px;
     color: #1700ae;
@@ -45,6 +60,7 @@ a {
     box-shadow: 0 0 8px #fff;
     transform: translateX(80px);
     color: #fff;
+    font-weight: 700;
 }
 
 .contact__info {
@@ -114,7 +130,7 @@ a {
     padding: 24px 0;
     border-radius: 40px 0 0 40px;
     border-right: 1px solid #1700ae;
-    height: 180px;
+    height: 210px;
 }
 
 .nav__list--li {
@@ -161,7 +177,9 @@ a {
 }
 
 .info__title {
-    font-weight: 800;
+    font-weight: 200;
+    /* font-family: "Playfair Display", serif; */
+    font-size: 24px;
 }
 
 .info__subtitle {
