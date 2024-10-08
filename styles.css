@@ -42,18 +42,15 @@ a {
 
 
 
-.page__title {
-    /* font-family: "Playfair Display", serif; */
-    font-weight: 100;
-    font-size: 44px;
-    color: #1700ae;
+.logo {
+    width: 300px;
     border-radius: 12px;
-    padding: 18px;
-    margin: 20px 40px;
+    /* padding: 18px; */
+    margin: 12px;
     transition: all 800ms ease;
 }
 
-.page__title:hover {
+.logo:hover {
     background: linear-gradient(33deg, rgba(10, 0, 154, 0.7), rgba(102, 156, 255, 0.4));
     cursor:e-resize;
     padding: 21px;
@@ -64,12 +61,12 @@ a {
 }
 
 .contact__info {
-    margin: 55px 40px 0 0;
+    margin: 80px 40px 0 0;
 }
 
 .phone__number {
     background-color: #f4f4f4;
-    padding: 12px;
+    padding: 12px 24px;
     border-radius: 30px;
     color: blue;
     text-decoration: none;
