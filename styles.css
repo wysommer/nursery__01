@@ -76,7 +76,7 @@ a {
 
 .phone__number:hover {
     background: linear-gradient(72deg, rgba(0, 140, 140, 0.7), rgba(0, 0, 0, 0.7));
-    padding: 15px;
+    padding: 15px 30px;
     box-shadow: 0 0 8px #fff;
     color: #fff;
     cursor: ne-resize;
@@ -185,6 +185,82 @@ a {
 
 .info__description {
     text-align: justify;
+}
+
+/* INVENTORY */
+
+
+.inventory__container {
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+
+.inventory__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inventory__list--li {
+    list-style: none;
+}
+
+.inventory__img {
+    width: 140px;
+}
+
+
+/* ADDRESS */
+
+.address__container {
+    max-width: 700px;
+}
+
+.address__img {
+    width: 100%;
+}
+
+/* CONTACT */
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    margin: 8px 80px;
+    width: 300px;
+}
+
+.contact__form--label {
+    padding: 12px;
+    text-align: left;
+    color: black;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 500;
+}
+
+.contact__form--input {
+    font-family: "Montserrat Alternates", sans-serif;
+    border: none;
+    box-shadow: 0 8px 16px #999;
+    border-radius: 30px;
+    padding: 12px;
+}
+
+.contact__form--submit-btn {
+    margin: 24px 0;
+    padding: 24px 12px;
+    background: linear-gradient(90deg, rgba(0, 140, 140, 0.9), rgba(0, 255, 255, 0.6));
+    border: none;
+    border-radius: 30px;
+    transition: all 800ms ease;
+    color: #fff;
+    font-size: 16px;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+.contact__form--submit-btn:hover {
+    background: linear-gradient(90deg, rgba(0, 255, 255, 0.6),rgba(0, 140, 140, 0.9));
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 0 16px rgba(0, 100, 100, 0.7);
 }
 
 /* FOOTER */
