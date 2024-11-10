@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 #background {
-    background-image: url("./assets/trees3.jpg");
-    /* background-size: 200%; */
+    background-image: url("./assets/mobile-bg.JPG");
+    background-size: 100%;
     margin: 0;
 }
 
@@ -283,4 +283,48 @@ footer {
     padding: 33px 47px;
     cursor: cell;
     font-size: 30px;
+}
+
+@media (max-width: 855px) {
+    .details__container {
+        flex-direction: column;
+        align-items: center;
+        margin: 80px 0 80px 0;
+    }
+
+    .nav {
+        border-radius: 40px;
+        border-right: none;
+        max-width: 500px;
+        margin-bottom: 40px;
+    }
+
+    .nav__list--li {
+        text-align: left;
+    }
+
+    .info__container {
+        max-width: 500px;
+        border-radius: 40px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact__info {
+        margin: 12px 0 40px 0;
+    }
+}
+
+@media (max-width: 550px) {
+    .nav {
+        max-width: 350px;
+    }
+
+    .info__container {
+        max-width: 400px;
+    }
+
 }
