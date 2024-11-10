@@ -324,7 +324,12 @@ footer {
     }
 
     .info__container {
-        max-width: 400px;
+        max-width: 350px;
+        margin: 0 24px;
+    }
+
+    .contact__form {
+        margin: 0 auto;
     }
 
 }
